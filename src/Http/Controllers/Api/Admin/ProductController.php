@@ -150,7 +150,7 @@ class ProductController extends Controller
         }
 
         $product->fill($request->only([
-            'title', 'detail', 'meta', 'price', 'type', 'gstype'
+            'title', 'detail', 'meta', 'type', 'gstype'
         ]));
 
         $product->categories()->sync($request->categories);
