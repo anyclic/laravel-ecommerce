@@ -1,0 +1,29 @@
+{
+    "name": "vtlabs/ecommerce",
+    "description": "Ecommerce in Laravel",
+    "type": "project",
+    "require": {
+        "laravel/framework": "^6.0",
+        "vtlabs/core": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Ujjwal Wahi",
+            "email": "w.ujjwal@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vtlabs\\Ecommerce\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vtlabs\\Ecommerce\\EcommerceServiceProvider",
+                "Vtlabs\\Ecommerce\\Providers\\EventServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
